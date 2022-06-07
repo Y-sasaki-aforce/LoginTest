@@ -4,12 +4,17 @@
 <%@include file="../header.html" %>
 
 <h1>ログイン画面</h1>
-<p>${error}</p>
-<form action="../jp.co.aforce/servlet/login-servlet" method="post">
 
-	ログインID(名前): <input type="text" name="user_name" required><br>
+<form action="../jp.co.aforce.servlet/login-servlet" method="post">
+
+	ログインID(名前): <input type="text" name="name" required><br>
 
 	パスワード : <input type="password" name="password" required><br>
+
+	<p>
+	${error_msg}
+	${user}
+	</p>
 
 	<button type="submit">ログイン</button>
 

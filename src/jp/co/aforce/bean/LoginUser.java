@@ -1,6 +1,8 @@
 package jp.co.aforce.bean;
 
-public class LoginUser {
+import java.io.Serializable;
+
+public class LoginUser implements Serializable {
 
 	private int id;
 	private String name;
